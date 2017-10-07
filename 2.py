@@ -14,12 +14,12 @@ if (sys.version_info > (3, 0)):
 else:
      import urllib2
 
-print(urllib2)
-
 id_list = [24, 25, 5, 6, 27, 23, 26, 7, 11, 13, 14, 15, 16, 17, 18, 19, 21, 22, 8, 9, 10, 1, 3, 2, 4, 12]
 
 Param_list = ["VCI", "TCI", "VHI"]
 
+if not os.path.exists('VHI/'):
+    os.makedirs('VHI/')
 os.chdir('VHI/')
 path = os.getcwd()
 
