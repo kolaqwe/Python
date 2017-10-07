@@ -18,6 +18,8 @@ id_list = [24, 25, 5, 6, 27, 23, 26, 7, 11, 13, 14, 15, 16, 17, 18, 19, 21, 22, 
 
 Param_list = ["VCI", "TCI", "VHI"]
 
+if not os.path.exists('VHI/'):
+    os.makedirs('VHI/')
 os.chdir('VHI/')
 path = os.getcwd()
 
