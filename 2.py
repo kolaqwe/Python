@@ -1,13 +1,20 @@
 __author__ = 'Kola'
 import pandas as pd
 import os
-import urllib2
 from spyre import server
 import matplotlib.pyplot as plt
 import json
 import pylab
 from matplotlib import mlab
 
+import sys
+
+if (sys.version_info > (3, 0)):
+     import urllib as urllib2
+else:
+     import urllib2
+
+print(urllib2)
 
 id_list = [24, 25, 5, 6, 27, 23, 26, 7, 11, 13, 14, 15, 16, 17, 18, 19, 21, 22, 8, 9, 10, 1, 3, 2, 4, 12]
 
