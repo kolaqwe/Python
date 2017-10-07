@@ -8,6 +8,9 @@ import pylab
 from matplotlib import mlab
 
 import sys
+import json
+
+config = json.load(open('config.json'))
 
 if (sys.version_info > (3, 0)):
      import urllib as urllib2
@@ -138,4 +141,4 @@ class PlotData(server.App):
 
 
 app = PlotData()
-app.launch(port=9094)
+app.launch(port=config['port'])
